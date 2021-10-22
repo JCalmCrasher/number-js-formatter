@@ -53,3 +53,6 @@ friendlyFormat(num2, 3) // "1.057m"
 - No dependencies
 - No global variables
 - No side effects; number-js-formatter function(s) has no side effects
+
+## 🔌 Contributing
+<p>Please open an issue or pull request if you have any suggestions or feedback.</p>
