@@ -20,9 +20,11 @@ import { friendlyFormat } from 'number-js-formatter';
 
 const num1 = 1000000;
 const num2 = 1056791;
+const num3 = 1000;
 
 friendlyFormat(num1) // "1m"
 friendlyFormat(num2, 3) // "1.057m"
+friendlyFormat(num3) // "1k"
 ```
 
 ## ⚒️ Methods
