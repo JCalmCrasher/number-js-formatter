@@ -1,0 +1,11 @@
+./dist
+.husky/
+.prettierignore
+package-lock.json
+package.json
+*.config.js
+.eslintcache
+src/**/*.css
+.gitignore
+todo.md
+.eslintignore

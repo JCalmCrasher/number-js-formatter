@@ -1,11 +1,15 @@
 {
   "name": "number-js-formatter",
-  "version": "0.1.1",
+  "version": "0.0.0-development",
   "description": "A Javascript library for formatting number to a friendly number",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"No test specified\""
+    "test": "echo \"No test specified\"",
+    "lint": "eslint . --ext .ts",
+    "format": "npx prettier --write .",
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
   "files": [
     "/dist"
@@ -24,5 +28,25 @@
     "name": "Joshua Osagie",
     "email": "joshua.osagie@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JCalmCrasher/number-js-formatter.git"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.16.0",
+    "@typescript-eslint/parser": "5.16.0",
+    "eslint": "8.11.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.3.7",
+    "prettier": "2.6.0",
+    "semantic-release": "^19.0.2"
+  },
+  "lint-staged": {
+    "*": "prettier --write",
+    "*.js": "eslint --cache --fix",
+    "*.ts": "eslint --cache --fix"
+  }
 }
