@@ -13,6 +13,7 @@ yarn add number-js-formatter
 ```
 
 ## 🚀 Quick start
+
 This library is minimal and doesn't require any configuration.
 
 ```js
@@ -22,12 +23,13 @@ const num1 = 1000000;
 const num2 = 1056791;
 const num3 = 1000;
 
-friendlyFormat(num1) // "1m"
-friendlyFormat(num2, 3) // "1.057m"
-friendlyFormat(num3) // "1k"
+friendlyFormat(num1); // "1m"
+friendlyFormat(num2, 3); // "1.057m"
+friendlyFormat(num3); // "1k"
 ```
 
 ## ⚒️ Methods
+
 <table>
     <thead>
         <tr>
@@ -51,14 +53,16 @@ friendlyFormat(num3) // "1k"
 </table>
 
 ## 💡 Features
+
 - Strongly typed; number-js-formatter is purely written in TypeScript.
 - No dependencies
 - No global variables
 - No side effects; number-js-formatter function(s) has no side effects
 
 ## Limitations
+
 - Doesn't support quadrillions numbers
 
+## 🔌 Contributing
 
-## 🔌  Contributing
 <p>Please open an issue or pull request if you have any suggestions or feedback.</p>
