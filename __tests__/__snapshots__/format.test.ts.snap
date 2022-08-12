@@ -1,0 +1,9 @@
+// Vitest Snapshot v1
+
+exports[`format > should format billion 1`] = `"1bn"`;
+
+exports[`format > should format million 1`] = `"1m"`;
+
+exports[`format > should format thousand 1`] = `"1k"`;
+
+exports[`format > should format trillion 1`] = `"1tn"`;
