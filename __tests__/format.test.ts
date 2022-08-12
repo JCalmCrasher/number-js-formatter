@@ -1,10 +1,21 @@
-import { describe, expect, test } from 'vitest';
 import { friendlyFormat } from '@/friendly-format';
+import { BILLION, MILLION, THOUSAND, TRILLION } from '@/numbers';
+import { describe, expect, it } from 'vitest';
 
 describe('format', () => {
-  test('format thousand', () => {
-    const numb1 = 1000000;
+  it('should format thousand', () => {
+    expect(friendlyFormat(THOUSAND)).toBe('1k');
+  });
 
-    expect(friendlyFormat(numb1)).toBe('1m');
+  it('should format million', () => {
+    expect(friendlyFormat(MILLION)).toBe('1m');
+  });
+
+  it('should format billion', () => {
+    expect(friendlyFormat(BILLION)).toBe('1bn');
+  });
+
+  it('should format trillion', () => {
+    expect(friendlyFormat(TRILLION)).toBe('1tn');
   });
 });
