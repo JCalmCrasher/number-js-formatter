@@ -22,7 +22,7 @@ describe('format thousand', () => {
         noOfDigitsAfterDecimal: 3
       };
       expect(friendlyFormat(THOUSAND_FLOAT, options)).toMatchInlineSnapshot(
-        '"1.010k"'
+        '"1.01k"'
       );
     });
   });

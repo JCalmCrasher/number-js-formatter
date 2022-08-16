@@ -14,7 +14,7 @@ describe('billion', () => {
           noOfDigitsAfterDecimal: 3
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.034bn"'
+          '"1.035bn"'
         );
       });
       it('should format billion to 4 decimal places', () => {
@@ -22,7 +22,7 @@ describe('billion', () => {
           noOfDigitsAfterDecimal: 4
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.0341bn"'
+          '"1.0349bn"'
         );
       });
     });
@@ -43,7 +43,7 @@ describe('billion', () => {
           form: '-il'
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.0341bil"'
+          '"1.0349bil"'
         );
       });
     });
@@ -64,7 +64,7 @@ describe('billion', () => {
           form: '-ill'
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.0341bill"'
+          '"1.0349bill"'
         );
       });
     });
@@ -85,7 +85,7 @@ describe('billion', () => {
           form: '-ln'
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.0341bln"'
+          '"1.0049bln"'
         );
       });
     });
