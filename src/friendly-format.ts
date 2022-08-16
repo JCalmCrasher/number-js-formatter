@@ -1,3 +1,4 @@
+import formatNumber from './utils/formatNumber';
 import { getNumberFromDict } from './utils/getLookupNumber';
 
 export interface FormatOptions {
@@ -17,24 +18,28 @@ export function friendlyFormat(
 
   if (label === 'thousand') {
     result =
-      (number / value).toFixed(options.noOfDigitsAfterDecimal) + symbol[0];
+      formatNumber(number / value, options.noOfDigitsAfterDecimal) + symbol[0];
   } else {
     switch (options.form) {
       case '-il':
         result =
-          (number / value).toFixed(options.noOfDigitsAfterDecimal) + symbol[1];
+          formatNumber(number / value, options.noOfDigitsAfterDecimal) +
+          symbol[1];
         break;
       case '-ill':
         result =
-          (number / value).toFixed(options.noOfDigitsAfterDecimal) + symbol[2];
+          formatNumber(number / value, options.noOfDigitsAfterDecimal) +
+          symbol[2];
         break;
       case '-ln':
         result =
-          (number / value).toFixed(options.noOfDigitsAfterDecimal) + symbol[3];
+          formatNumber(number / value, options.noOfDigitsAfterDecimal) +
+          symbol[3];
         break;
       default:
         result =
-          (number / value).toFixed(options.noOfDigitsAfterDecimal) + symbol[0];
+          formatNumber(number / value, options.noOfDigitsAfterDecimal) +
+          symbol[0];
         break;
     }
   }
