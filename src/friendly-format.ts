@@ -1,10 +1,6 @@
+import { FormatOptions } from './types';
 import formatNumber from './utils/formatNumber';
 import { getNumberFromDict } from './utils/getLookupNumber';
-
-export interface FormatOptions {
-  noOfDigitsAfterDecimal: 0 | 1 | 2 | 3 | 4;
-  form?: '-il' | '-ill' | '-ln' | 'default';
-}
 
 export function friendlyFormat(
   number: number,

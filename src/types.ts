@@ -11,3 +11,8 @@ export interface ILookup {
 export type ILookupLabel = 'thousand' | 'million' | 'billion' | 'trillion';
 
 export type ILookupSymbol = 'k' | IMillion | IBillion | ITrillion;
+
+export interface FormatOptions {
+  noOfDigitsAfterDecimal: 0 | 1 | 2 | 3 | 4;
+  form?: '-il' | '-ill' | '-ln' | 'default';
+}
