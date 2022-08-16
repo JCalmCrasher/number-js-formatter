@@ -1,19 +1,43 @@
-import lookup from './number-lookup';
+import { getNumberFromDict } from './utils/getLookupNumber';
 
-export function friendlyFormat(number: number, digits = 0) {
-  const lookupNumbers = lookup;
+export interface FormatOptions {
+  noOfDigitsAfterDecimal: 0 | 1 | 2 | 3 | 4;
+  form?: '-il' | '-ill' | '-ln' | 'default';
+}
 
-  const regex = /\.0+$|(\.[0-9]*[1-9])0+$/;
+export function friendlyFormat(
+  number: number,
+  options: FormatOptions = { noOfDigitsAfterDecimal: 0, form: 'default' }
+) {
+  if (typeof number !== 'number' || isNaN(number)) {
+    throw new Error('Number is not a number');
+  }
+  const { value, label, symbol } = getNumberFromDict(number);
+  let result = '';
 
-  const result = lookupNumbers
-    .slice()
-    .reverse()
-    .find(function (item) {
-      return number >= item.value;
-    });
+  if (label === 'thousand') {
+    result =
+      (number / value).toFixed(options.noOfDigitsAfterDecimal) + symbol[0];
+  } else {
+    switch (options.form) {
+      case '-il':
+        result =
+          (number / value).toFixed(options.noOfDigitsAfterDecimal) + symbol[1];
+        break;
+      case '-ill':
+        result =
+          (number / value).toFixed(options.noOfDigitsAfterDecimal) + symbol[2];
+        break;
+      case '-ln':
+        result =
+          (number / value).toFixed(options.noOfDigitsAfterDecimal) + symbol[3];
+        break;
+      default:
+        result =
+          (number / value).toFixed(options.noOfDigitsAfterDecimal) + symbol[0];
+        break;
+    }
+  }
 
-  return result
-    ? (number / result.value).toFixed(digits).replace(regex, '$1') +
-        result.symbol
-    : '0';
+  return result;
 }
