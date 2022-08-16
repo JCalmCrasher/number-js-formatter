@@ -1,4 +1,5 @@
-import { FormatOptions, friendlyFormat } from '@/friendly-format';
+import { friendlyFormat } from '@/friendly-format';
+import { FormatOptions } from '@/types';
 import { TRILLION, TRILLION_FLOAT } from '@/utils/mocks/numbers';
 import { describe, expect, it } from 'vitest';
 
