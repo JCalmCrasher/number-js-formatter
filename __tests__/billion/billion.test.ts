@@ -14,7 +14,7 @@ describe('billion', () => {
           noOfDigitsAfterDecimal: 3
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.035bn"'
+          '"1.005bn"'
         );
       });
       it('should format billion to 4 decimal places', () => {
@@ -22,7 +22,7 @@ describe('billion', () => {
           noOfDigitsAfterDecimal: 4
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.0349bn"'
+          '"1.0049bn"'
         );
       });
     });
@@ -34,7 +34,7 @@ describe('billion', () => {
           form: '-il'
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.03bil"'
+          '"1bil"'
         );
       });
       it('should format billion to 4 decimal places', () => {
@@ -43,7 +43,7 @@ describe('billion', () => {
           form: '-il'
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.0349bil"'
+          '"1.0049bil"'
         );
       });
     });
@@ -55,7 +55,7 @@ describe('billion', () => {
           form: '-ill'
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.03bill"'
+          '"1bill"'
         );
       });
       it('should format billion to 4 decimal places', () => {
@@ -64,7 +64,7 @@ describe('billion', () => {
           form: '-ill'
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.0349bill"'
+          '"1.0049bill"'
         );
       });
     });
@@ -76,7 +76,7 @@ describe('billion', () => {
           form: '-ln'
         };
         expect(friendlyFormat(BILLION_FLOAT, options)).toMatchInlineSnapshot(
-          '"1.03bln"'
+          '"1bln"'
         );
       });
       it('should format billion to 4 decimal places', () => {
