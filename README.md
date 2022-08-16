@@ -19,16 +19,13 @@ This library is minimal and doesn't require any configuration.
 ```js
 import { friendlyFormat } from 'number-js-formatter';
 
-const num1 = 1000_000;
-const num2 = 1056791;
-const num3 = 1_004_850_000.91332;
-const options: FormatOptions = {
-    noOfDigitsAfterDecimal: 2
-};
+const num1 = 1_923_500.156;
+const num2 = 1_004_850_000.91332;
+const num3 = 1105_830_000_302.9946;
 
-friendlyFormat(num1); // "1m"
-friendlyFormat(num2, 3); // "1.057m"
-friendlyFormat(num3); // "1k"
+friendlyFormat(num1, { noOfDigitsAfterDecimal: 3 }); // "1.924m"
+friendlyFormat(num2, { noOfDigitsAfterDecimal: 4, orm: '-ln' }); // "1.0049bln"
+friendlyFormat(num3, { noOfDigitsAfterDecimal: 3 }); // "1.106tn"
 ```
 
 ## ⚒️ Methods
