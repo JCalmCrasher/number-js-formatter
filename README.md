@@ -19,9 +19,12 @@ This library is minimal and doesn't require any configuration.
 ```js
 import { friendlyFormat } from 'number-js-formatter';
 
-const num1 = 1000000;
+const num1 = 1000_000;
 const num2 = 1056791;
-const num3 = 1000;
+const num3 = 1_004_850_000.91332;
+const options: FormatOptions = {
+    noOfDigitsAfterDecimal: 2
+};
 
 friendlyFormat(num1); // "1m"
 friendlyFormat(num2, 3); // "1.057m"
@@ -40,8 +43,8 @@ friendlyFormat(num3); // "1k"
     </thead>
     <tbody>
         <tr>
-            <td>friendlyFormat</td>
-            <td>Formats a number into a human-friendly string.</td>
+            <td><code>friendlyFormat</code></td>
+            <td>Formats a number into a human-friendly string.
             <td>
                 <ul>
                     <li> <code>number: number</code> <span>The value to be formatted</span> </li>
@@ -52,16 +55,43 @@ friendlyFormat(num3); // "1k"
     </tbody>
 </table>
 
+# 🔨 Args 
+
+<table>
+    <thead>
+        <tr>
+            <th>Method</th>
+            <th>Args</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2><code>friendlyFormat</code></td>
+            <td><code>number: number</code></td>
+            <td>
+                number to be formatted
+            </td>
+        </tr>
+          <tr>
+            <td><code>FormatOptions</code> object</td>
+            <td>
+                parameters to use for formatting
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 ## 💡 Features
 
+- Format options in different short forms.
 - Strongly typed; number-js-formatter is purely written in TypeScript.
-- No dependencies
-- No global variables
-- No side effects; number-js-formatter function(s) has no side effects
+- Tested.
 
 ## Limitations
 
 - Doesn't support quadrillions numbers
+- Locale support comming soon
 
 ## 🔌 Contributing
 
