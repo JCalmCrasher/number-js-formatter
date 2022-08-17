@@ -28,7 +28,7 @@ const num2 = 1_004_850_000.91332;
 const num3 = 1105_830_000_302.9946;
 
 friendlyFormat(num1, { noOfDigitsAfterDecimal: 3 }); // "1.924m"
-friendlyFormat(num2, { noOfDigitsAfterDecimal: 4, orm: '-ln' }); // "1.0049bln"
+friendlyFormat(num2, { noOfDigitsAfterDecimal: 4, form: '-ln' }); // "1.0049bln"
 friendlyFormat(num3, { noOfDigitsAfterDecimal: 3 }); // "1.106tn"
 ```
 
