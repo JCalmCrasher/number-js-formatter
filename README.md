@@ -4,12 +4,16 @@
 
 <p>Perhaps a number like 1000000 is coming from an API you're using or you just want to display a number in a more friendly format; number-js-formatter helps you do that with ease.</p>
 
+## Requirements
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/en/download/)(v14+ or latest LTS)
 ## 📦 Install
-
 ```sh
 npm install number-js-formatter
 # or
 yarn add number-js-formatter
+# or
+pnpm add number-js-formatter
 ```
 
 ## 🚀 Quick start
