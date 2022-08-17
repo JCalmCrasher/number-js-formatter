@@ -39,20 +39,12 @@ friendlyFormat(num3, { noOfDigitsAfterDecimal: 3 }); // "1.106tn"
         <tr>
             <th>Method</th>
             <th>Description</th>
-            <th>Parameter</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td><code>friendlyFormat</code></td>
             <td>Formats a number into a human-friendly number.
-            <td>
-                <ul>
-                    <li> <code>number:</code> <span>The value to be formatted</span> </li>
-                    <li> <code>noOfDigitsAfterDecimal(optional): </code> <span>Number of digits after the decimal point</span> </li>
-                    <li> <code>form(optional): </code> <span>short form to use (e.g <code>mill</code>, <code>tln</code>)</span> </li>
-                </ul>
-            </td>
         </tr>
     </tbody>
 </table>
