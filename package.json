@@ -20,7 +20,7 @@
     "postversion": "git push && git push --tags"
   },
   "files": [
-    "/dist"
+    "/dist/src"
   ],
   "keywords": [
     "js",
