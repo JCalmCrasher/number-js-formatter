@@ -1,6 +1,6 @@
 {
   "name": "number-js-formatter",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A Javascript library for formatting number to a friendly number",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -13,9 +13,9 @@
     "semantic-release": "semantic-release",
     "prepare": "husky install",
     "build": "tsc",
-    "prep" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
+    "prep": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
