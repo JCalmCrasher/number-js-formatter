@@ -1,6 +1,6 @@
 {
   "name": "number-js-formatter",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "A Javascript library for formatting number to a friendly number",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
