@@ -34,12 +34,19 @@ Issues should be used to report problems with the library, request a new feature
 
 - Only fix/add the functionality in question OR address wide-spread whitespace/style issues, not both.
 - Use a consistent commit message, preferably in this format
+
   - `<type>(<scope>): <subject>`. ### Samples:
+
     ```sh
      docs: add CONTRIBUTING guide
+    ```
+
+    ```sh
      refactor: number methods
     ```
+
     See [angular commit guide](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#-commit-message-format) for more details.
+
 - Add unit tests for fixed or changed functionality (if a test suite already exists).
 
 _PS: if for some reasons the format command doesn't run while making a commit, please make sure to format your code with `npm run format` or `yarn run format`_
