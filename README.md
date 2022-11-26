@@ -87,4 +87,4 @@ friendlyFormat(num3, { noOfDigitsAfterDecimal: 3 }); // "1.106tn"
 - Locale support comming soon
 
 ## 🔌 Contributing
-Read through our [contributing guidelines](contributing) to learn about our submission process, coding rules, and more.
+Read through our [contributing guidelines](CONTRIBUTING.md) to learn about our submission process, coding rules, and more.
