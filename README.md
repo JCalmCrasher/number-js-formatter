@@ -1,4 +1,4 @@
-# number-js-formatter
+## number-js-formatter
 
 <p>Number-js-formatter is a JavaScript library that formats numbers in a human-friendly way.</p>
 
@@ -87,5 +87,4 @@ friendlyFormat(num3, { noOfDigitsAfterDecimal: 3 }); // "1.106tn"
 - Locale support comming soon
 
 ## 🔌 Contributing
-
-<p>Please open an issue or pull request if you have any suggestions or feedback.</p>
+Read through our [contributing guidelines](contributing) to learn about our submission process, coding rules, and more.
