@@ -42,7 +42,7 @@ Issues should be used to report problems with the library, request a new feature
     See [angular commit guide](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#-commit-message-format) for more details.
 - Add unit tests for fixed or changed functionality (if a test suite already exists).
 
-_PS: if for some reasons the format command doesn't run while commiting, please make sure to format your code with `npm run format` or `yarn run format`_
+_PS: if for some reasons the format command doesn't run while making a commit, please make sure to format your code with `npm run format` or `yarn run format`_
 
 For changes that address core functionality or would require breaking changes (e.g. a major release), it's best to open an Issue to discuss your proposal first. This is not required but can save time creating and reviewing changes.
 
