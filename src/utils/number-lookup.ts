@@ -1,6 +1,7 @@
 import { ILookup } from '@/types';
 
 const lookup: ILookup[] = [
+  { value: 0, symbol: '', label: '' },
   { value: 1e3, symbol: 'k', label: 'thousand' },
   { value: 1e6, symbol: ['m', 'mil', 'mill', 'mln'], label: 'million' },
   { value: 1e9, symbol: ['bn', 'bil', 'bill', 'bln'], label: 'billion' },
