@@ -8,7 +8,12 @@ export interface ILookup {
   label: ILookupLabel;
 }
 
-export type ILookupLabel = '' | 'thousand' | 'million' | 'billion' | 'trillion';
+export type ILookupLabel =
+  | 'hundred'
+  | 'thousand'
+  | 'million'
+  | 'billion'
+  | 'trillion';
 
 export type ILookupSymbol = '' | 'k' | IMillion | IBillion | ITrillion;
 

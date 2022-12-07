@@ -12,7 +12,7 @@ export function friendlyFormat(
   const { value, label, symbol } = getNumberFromDict(number);
   let result = '';
 
-  if (label === '') {
+  if (label === 'hundred') {
     result = formatNumber(number, options.noOfDigitsAfterDecimal);
   } else if (label === 'thousand') {
     result =
