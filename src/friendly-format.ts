@@ -3,16 +3,17 @@ import formatNumber from './utils/formatNumber';
 import { getNumberFromDict } from './utils/getLookupNumber';
 
 export function friendlyFormat(
-  number: number,
+  number: number | string,
   options: FormatOptions = { noOfDigitsAfterDecimal: 0, form: 'default' }
 ) {
+  number = Number(number);
   if (typeof number !== 'number' || isNaN(number)) {
     throw new Error('Number is not a number');
   }
   const { value, label, symbol } = getNumberFromDict(number);
   let result = '';
 
-  if (label === 'hundred') {
+  if (label === 'unit' || label === 'ten' || label === 'hundred') {
     result = formatNumber(number, options.noOfDigitsAfterDecimal);
   } else if (label === 'thousand') {
     result =

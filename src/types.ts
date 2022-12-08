@@ -9,6 +9,8 @@ export interface ILookup {
 }
 
 export type ILookupLabel =
+  | 'unit'
+  | 'ten'
   | 'hundred'
   | 'thousand'
   | 'million'
