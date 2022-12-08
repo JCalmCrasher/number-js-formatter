@@ -84,7 +84,7 @@ friendlyFormat(num3, { noOfDigitsAfterDecimal: 3 }); // "1.106tn"
 ## Limitations
 
 - Doesn't support quadrillions numbers
-- Locale support comming soon
+- Locale support coming soon
 
 ## 🔌 Contributing
 Read through our [contributing guidelines](CONTRIBUTING.md) to learn about our submission process, coding rules, and more.
