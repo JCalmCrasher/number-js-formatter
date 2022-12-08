@@ -86,5 +86,9 @@ friendlyFormat(num3, { noOfDigitsAfterDecimal: 3 }); // "1.106tn"
 - Doesn't support quadrillions numbers
 - Locale support coming soon
 
+## Demo
+- Editor: https://stackblitz.com/edit/react-7vx6bf?file=src/App.js
+- App URL: https://react-7vx6bf.stackblitz.io
+
 ## 🔌 Contributing
 Read through our [contributing guidelines](CONTRIBUTING.md) to learn about our submission process, coding rules, and more.
